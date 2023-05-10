@@ -1,0 +1,9 @@
+<h1>The Best Damn Songs</h1>
+
+<h2>My musical taste is the worst.</h2>
+
+<% @songs.each do |song| %>
+    <h3><%= song.title %></h3>
+    <p>Play Count:<%= song.play_count %></p>
+    <p>Length:<%= song.length %></p>
+<% end %>
